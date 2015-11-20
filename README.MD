@@ -21,3 +21,9 @@ The next step will be to animate a visualization of the β-reduction or η-reduc
 Finally, I intend to create a Lambda Touch app in the spirit of [Sean Berry's](http://www.regularberry.com/) Algebra Touch. I've already floated the idea past Sean, and he's cool with it. If you would like to help, please let me know.
 
 [@michaellperry](http://twitter.com/michaellperry).
+
+## Inspiration for this project
+
+[Sublime Lambdas](https://github.com/Glorp/SublimeLambdas) - Python extension to Sublime Text that also lets you name expressions.
+[Lambda Calculator](http://cburch.com/lambda/) - Online evaluation of lambda expressions, with a dictionary.
+[Einar Høst & Jonas Winje - Optimizing Lambda Calculus](https://vimeo.com/96639838) - Conference talk demonstrating The Lambda Calculus in Sublime.
