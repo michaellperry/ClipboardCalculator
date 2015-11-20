@@ -24,6 +24,6 @@ Finally, I intend to create a Lambda Touch app in the spirit of [Sean Berry's](h
 
 ## Inspiration for this project
 
-[Sublime Lambdas](https://github.com/Glorp/SublimeLambdas) - Python extension to Sublime Text that also lets you name expressions.
-[Lambda Calculator](http://cburch.com/lambda/) - Online evaluation of lambda expressions, with a dictionary.
-[Einar Høst & Jonas Winje - Optimizing Lambda Calculus](https://vimeo.com/96639838) - Conference talk demonstrating The Lambda Calculus in Sublime.
+- [Sublime Lambdas](https://github.com/Glorp/SublimeLambdas) - Python extension to Sublime Text that also lets you name expressions.
+- [Lambda Calculator](http://cburch.com/lambda/) - Online evaluation of lambda expressions, with a dictionary.
+- [Einar Høst & Jonas Winje - Optimizing Lambda Calculus](https://vimeo.com/96639838) - Conference talk demonstrating The Lambda Calculus in Sublime.
