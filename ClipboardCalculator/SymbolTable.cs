@@ -19,7 +19,11 @@ namespace ClipboardCalculator
 
         public SymbolTable Plus(char id, Symbol variable)
         {
-            return new SymbolTable(_symbols.Add(id, variable));
+            var symbols = _symbols.ContainsKey(id)
+                ? _symbols.Remove(id)
+                : _symbols;
+            symbols = symbols.Add(id, variable);
+            return new SymbolTable(symbols);
         }
 
         public Symbol Lookup(char id)

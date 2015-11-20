@@ -61,5 +61,12 @@ namespace ClipboardCalculator.Test
             string result = Evaluator.Evaluate("(λa.λx.a x a) x");
             Assert.AreEqual("λy.x y x", result);
         }
+
+        [TestMethod]
+        public void CanHandleScope()
+        {
+            string result = Evaluator.Evaluate("(λx.(λx.x x) x) A");
+            Assert.AreEqual("(λx.x x) A", result);
+        }
     }
 }

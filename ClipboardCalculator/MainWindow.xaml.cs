@@ -20,9 +20,39 @@ namespace ClipboardCalculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        ICommand _reduceClipboardCommand;
+
         public MainWindow()
         {
+            _reduceClipboardCommand = new RelayCommand(DoReduceClipboard);
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            DataContext = this;
+        }
+
+        public ICommand ReduceClipboard
+        {
+            get { return _reduceClipboardCommand; }
+        }
+
+        private void DoReduceClipboard()
+        {
+            if (Clipboard.ContainsText(TextDataFormat.UnicodeText))
+            {
+                string text = Clipboard.GetText(TextDataFormat.UnicodeText);
+                try
+                {
+                    string result = Evaluator.Evaluate(text);
+                    Clipboard.SetText(result, TextDataFormat.UnicodeText);
+                }
+                catch (Exception x)
+                {
+                    Clipboard.SetText(x.Message, TextDataFormat.Text);
+                }
+            }
         }
     }
 }

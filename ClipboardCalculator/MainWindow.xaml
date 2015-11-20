@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClipboardCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Clipboard Calculator" Height="132.397" Width="337.11"
+        Loaded="Window_Loaded">
+    <Window.InputBindings>
+        <KeyBinding Gesture="Ctrl+Shift+L" Command="{Binding ReduceClipboard}"
+                    HotkeyManager.RegisterGlobalHotkey="True" />
+    </Window.InputBindings>
     <Grid>
-        
+        <TextBlock FontSize="24" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" Text="Copy an expression to the clipboard, press Ctrl+Shift+L, and then paste the result."/>
     </Grid>
 </Window>
